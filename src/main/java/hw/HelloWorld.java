@@ -1,4 +1,5 @@
 package hw;
+import java.time.*;
 
 public class HelloWorld {
 
@@ -7,6 +8,7 @@ public class HelloWorld {
   }
 
   public int getYear() {
-    return 2024;
+    Year thisYear = Year.now();
+    return thisYear.getValue();
   }
 }
